@@ -10,7 +10,7 @@ import {
     getMyProfile,
     updateProfile,
     updatePassword,
-    forgotPassword,
+    forgetPassword,
     resetPassword
     } from "../controllers/User.js";
 import { isAuthenticated } from "../middleware/auth.js";
@@ -32,7 +32,7 @@ router.route("/updateProfile").put(isAuthenticated, updateProfile);
 
 router.route("/updatePassword").put(isAuthenticated, updatePassword);
 
-router.route("/forgotPassword").post(forgotPassword);
+router.route("/forgetPassword").post(forgetPassword);
 router.route("/resetPassword").put(resetPassword);
 
 export default router;

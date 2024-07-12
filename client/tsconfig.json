@@ -1,0 +1,17 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "paths": {
+      "@/*": [
+        "./*"
+      ]
+    }
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    ".expo/types/**/*.ts",
+    "expo-env.d.ts"
+, "redux/reducer.js", "Main.jsx", "screens/Login.jsx", "app/index.jsx", "redux/action.js", "screens/Home.jsx", "components/Task.jsx", "screens/Profile.jsx", "screens/Camera.jsx", "screens/Register.jsx"  ]
+}

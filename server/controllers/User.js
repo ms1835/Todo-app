@@ -71,6 +71,7 @@ export const verify = async(req, res) => {
 export const login = async(req, res) => {
     try{
         const {email, password} = req.body;
+        console.log(email, password);
 
         let user = await Users.findOne({email}).select("+password");
         if(!email || !password){
@@ -234,7 +235,7 @@ export const updatePassword = async(req, res) => {
     }
 }
 
-export const forgotPassword = async(req, res) => {
+export const forgetPassword = async(req, res) => {
     try{
         const { email } = req.body;
         const user = await Users.findOne({email});
@@ -268,7 +269,7 @@ export const resetPassword = async(req, res) => {
         user.password = newPassword;
         user.resetPasswordOtp = null;
         user.resetPasswordOtpExpiry = null;
-        await usr.save();
+        await user.save();
 
         res.status(200).json({success: true, message: "Password reset successfully"});
     } catch(err) {
