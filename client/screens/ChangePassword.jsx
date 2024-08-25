@@ -46,7 +46,7 @@ const styles = StyleSheet.create({
         fontSize: 15
     },
     submitBtn: {
-        backgroundColor: "#900",
+        backgroundColor: "darkslateblue",
         width: '70%',
         padding: 5,
         borderRadius: 5,

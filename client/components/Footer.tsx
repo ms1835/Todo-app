@@ -7,7 +7,7 @@ const Footer = () => {
     const navigation = useNavigation();
 
     return (
-        <View style={{flexDirection: "row", padding: 20, justifyContent: "space-around", backgroundColor: "gray"}}>
+        <View style={{flexDirection: "row", padding: 20, justifyContent: "space-around", backgroundColor: "steelblue"}}>
             <TouchableOpacity onPress={() => navigation.navigate('home')}>
                 <Icon name="home" size={24} color="#fff" />
             </TouchableOpacity>

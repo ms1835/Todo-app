@@ -1,5 +1,7 @@
+import { SERVER_ENDPOINT, SERVER_PORT} from '@env';
 
-const serverURL = "http://192.168.211.106:4000/api/v1";
+const serverURL = `${SERVER_ENDPOINT}:${SERVER_PORT}/api/v1`;
+
 
 export const login = (email, password) => async(dispatch) => {
     try{

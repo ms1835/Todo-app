@@ -35,7 +35,7 @@ const Login = () => {
             </Pressable>
             <Text style={{marginVertical: 12}}>OR</Text>
             <TouchableOpacity onPress={() => navigation.navigate("register")}>
-                <Text style={{color: "#900", height: 30}}>Sign Up</Text>
+                <Text style={{color: "darkslayeblue", height: 30}}>Sign Up</Text>
             </TouchableOpacity>
             <TouchableOpacity onPress={() => navigation.navigate("forgetpassword")}>
                 <Text style={{height: 30}}>Forget Password</Text>
@@ -63,7 +63,7 @@ const styles = StyleSheet.create({
         fontSize: 15
     },
     submitBtn: {
-        backgroundColor: "#900",
+        backgroundColor: "darkslateblue",
         width: '70%',
         padding: 5,
         borderRadius: 5,

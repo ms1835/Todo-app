@@ -22,11 +22,11 @@ const Task = ({taskId, title, description, status}) => {
     return (
         <View style={styles.container}>
             <View style={{width: '70%'}}>
-                <Text style={{fontSize: 20, color: "blue"}}>{title}</Text>
+                <Text style={{fontSize: 20, color: "teal"}}>{title}</Text>
                 <Text>{description}</Text>
             </View>
             <Checkbox status={completed ? "checked" : "unchecked"} onPress={handleCheckBox} />
-            <Icon name="delete" color="#fff" size={20} style={{backgroundColor: "red", padding: 8, borderRadius: 100}} onPress={handleDelete} />
+            <Icon name="delete" color="#fff" size={20} style={{backgroundColor: "peru", padding: 8, borderRadius: 100}} onPress={handleDelete} />
         </View>
     )
 };

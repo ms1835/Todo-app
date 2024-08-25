@@ -51,7 +51,7 @@ const Home = () => {
                             ))
                         }
                         <TouchableOpacity style={styles.addBtn} onPress={handleDialog}>
-                            <Icon name="add-to-list" size={24} color="brown" />
+                            <Icon name="add-to-list" size={24} color="darkslateblue" />
                         </TouchableOpacity>
                     </SafeAreaView>
                 </ScrollView>
@@ -77,11 +77,12 @@ export default Home;
 
 const styles = StyleSheet.create({
     heading: {
-        backgroundColor: "brown", 
+        backgroundColor: "steelblue", 
         color: "white", 
         textAlign: 'center', 
         fontSize: 20,
-        marginVertical: 10
+        paddingVertical: 8,
+        marginBottom: 10
     },
     addBtn: {
         backgroundColor: '#fff',

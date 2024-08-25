@@ -51,10 +51,10 @@ const Profile = ({ route }) => {
             <Avatar.Image
                 size={100}
                 source={{uri: avatar ? avatar : undefined}}
-                style={{backgroundColor: "#900"}}
+                style={{backgroundColor: "darkslateblue"}}
             />
             <TouchableOpacity style={{marginVertical: 8}} onPress={handleProfileChange}>
-                <Text style={{color: "#900", fontSize: 16}}>Change Photo</Text>
+                <Text style={{color: "darkslateblue", fontSize: 16}}>Change Photo</Text>
             </TouchableOpacity>
             <View style={{width: "70%"}}>
                 <TextInput style={styles.input} value={name} onChangeText={setName} />
@@ -97,7 +97,7 @@ const styles = StyleSheet.create({
         fontSize: 15
     },
     submitBtn: {
-        backgroundColor: "#900",
+        backgroundColor: "darkslateblue",
         width: '70%',
         padding: 5,
         borderRadius: 5,

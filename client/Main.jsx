@@ -37,9 +37,9 @@ const Main = () => {
     return (
         loading ? (
             <Loader /> 
-        ) : (
+        ) : ( 
             <>
-            <Stack.Navigator initialRouteName={"login"}>
+            <Stack.Navigator initialRouteName={isAuthenticated ? "home" : "login"}>
                 <Stack.Screen name="home" component={Home} options={{headerShown: false}} />
                 <Stack.Screen name="login" component={Login} options={{headerShown: false}} />
                 <Stack.Screen name="profile" component={Profile} options={{headerShown: false}} />
